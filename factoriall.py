@@ -35,6 +35,7 @@ def choice_1(dr):
 
 
 def choice_2(dr):
+    # TODO: fix this
     """
     this choice finds the console message printed out once the factorial is calculated
     :param dr: the webdriver used
@@ -57,6 +58,32 @@ def choice_3(dr):
     print(120 == int(output[-1]))
 
 
+def choice_4(dr):
+    # TODO: figure out how to find the API being called
+    """
+    This figures out the API call that is being made with the headers and parameters sent
+    :param dr: the webdriver used
+    :return: no return value
+    """
+    print("Choice 4 chosen. This will be done later")
+
+
+def choice_5():
+    """
+    This writes a bug report
+    :return: no return value
+    """
+    print("Choice 5 chosen. This will be done later")
+
+
+def choice_6():
+    """
+    This documents a test case
+    :return: no return value
+    """
+    print("Choice 6 chosen. This will be done later")
+
+
 def choice(dr):
     # TODO:
     # 2. find teh console message printed
@@ -68,13 +95,25 @@ def choice(dr):
           "3. write a Selenium script to test that the factorial of 5 is 120\n"
           "4. figure out the API call being made along with the headers and parameters sent\n"
           "5. write a bug report\n"
-          "6. document a test case")
-    print("Which would you like to run? ")
-    # elem_attr = choice_1(dr)
-    # choice_2(dr)
-    choice_3(dr)
-
-    # close_interview(driver)
+          "6. document a test case\n"
+          "7. Quit")
+    choice = int(input("Which would you like to choose? "))
+    while choice != 7:
+        if choice not in range(1,7):
+            choice = int(input("Please enter a number between 1 and 7: "))
+        elif choice == 1:
+            choice_1(dr)
+        elif choice == 2:
+            choice_2(dr)
+        elif choice == 3:
+            choice_3(dr)
+        elif choice == 4(dr):
+            choice_4(dr)
+        elif choice == 5:
+            choice_5()
+        elif choice == 6:
+            choice_6()
+    close_interview()
 
 
 if __name__ == '__main__':
